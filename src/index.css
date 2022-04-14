@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .service-list {
+    @apply font-sans duration-300 hover:border-l-4 hover:border-indigo-800 hover:translate-x-2 hover:bg-slate-50;
+  }
+
+  .footer-menu {
+    @apply font-sans duration-300 hover:translate-x-1;
+  }
+
+  .icon-style {
+    @apply text-[#22577E] ring-2 rounded-full ring-offset-8 mb-6 ring-[#22577E];
+  }
+
+  .box-heading {
+    @apply font-sans font-medium text-lg text-[#3A3845];
+  }
+}

@@ -1,0 +1,46 @@
+.after-head-right {
+}
+
+.after-head-right > p {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.after-head-right > p:first-child {
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+
+.after-head-right > p:nth-child(2) {
+  margin-top: 10px;
+  font-size: 2.1rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.after-head-right > p:nth-child(3) {
+  font-size: 1.42rem;
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #00afc1;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.after-head-right > p:nth-child(4) {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.after-head-right > p:nth-child(5) {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.15rem;
+  border-bottom: 4px solid #00afc1;
+  padding-bottom: 10px;
+}
