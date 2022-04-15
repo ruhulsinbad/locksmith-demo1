@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["About Us", "Services", "Contact Us"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,12 +27,12 @@ const ResponsiveAppBar = () => {
     <AppBar
       elevation={0}
       position="sticky"
+      className=""
       sx={{
+        mt: 8,
         background: "#FAFDD6",
         boxShadow: "none",
-        pt: 5,
-        color: "#fdcb6e",
-        fontSize: 15,
+        color: "#22577E",
       }}
     >
       <Container maxWidth="xl">
@@ -41,12 +41,14 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            // sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             sx={{
               flexGrow: 1,
               ml: { xs: "auto", md: 10, lg: 21 },
               mr: { xs: 2, md: "auto" },
               display: { xs: "none", md: "flex" },
+              fontFamily: "Roboto, sans-serif",
+              fontSize: 30,
+              fontWeight: "bold",
             }}
           >
             LOCKSMITH
@@ -61,7 +63,6 @@ const ResponsiveAppBar = () => {
           >
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -84,14 +85,17 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                // mr: { md: "auto" },
                 mr: { xs: "auto", md: 10, lg: 15 },
                 ml: { xs: "auto", md: "auto", lg: "auto" },
                 display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  sx={{ fontFamily: "Open Sans, sans-serif" }}
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -101,7 +105,16 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "flex",
+                md: "none",
+                fontFamily: "Roboto, sans-serif",
+                fontSize: 30,
+                fontWeight: "bold",
+              },
+            }}
           >
             LOCKSMITH
           </Typography>
@@ -117,7 +130,15 @@ const ResponsiveAppBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#fdcb6e", display: "block" }}
+                sx={{
+                  my: 2,
+                  mx: 3,
+                  display: "block",
+                  fontFamily: "Roboto, sans-serif",
+                  fontSize: 20,
+                  fontWeight: "normal",
+                  color: "#22577E",
+                }}
               >
                 {page}
               </Button>

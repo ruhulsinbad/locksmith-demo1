@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -9,49 +8,37 @@ const Footer = () => {
   const year = date.getFullYear();
   return (
     <>
-      <Box>
-        <Box
-          className="grid grid-cols-1 lg:grid-cols-3"
-          sx={{
-            p: 4,
-            bgcolor: "#525E75",
-            color: "#ffffff",
-          }}
-        >
-          <Box>
-            <h1> Locksmith </h1>
-          </Box>
-          <Box>
+      <div className="divide-y divide-dashed">
+        <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#525E75] text-white px-4 py-16 md:px-28 lg:px-48 ">
+          <h1 className=" justify-self-start">Locksmith</h1>
+          <div className=" justify-self-center">
             <ul>
               <li className="footer-menu"> Residential </li>
               <li className="footer-menu"> Corporate </li>
               <li className="footer-menu"> Car Programming </li>
             </ul>
-          </Box>
+          </div>
 
-          <Box>
-            <h1> Follow us </h1>
-            <FacebookIcon />
-            <InstagramIcon />
-            <YouTubeIcon />
-          </Box>
-        </Box>
+          <div className=" justify-self-end">
+            <h1 className=""> Follow us </h1>
+            <div className="flex">
+              <div className="group">
+                <FacebookIcon />{" "}
+                <span className="hidden group-hover:block">facebook</span>
+              </div>
+              <InstagramIcon />
+              <YouTubeIcon />
+            </div>
+          </div>
+        </div>
 
-        <Box
-          className="grid grid-cols-1 lg:grid-cols-2 items-center"
-          sx={{
-            pt: 5,
-            pb: 15,
-            bgcolor: "#525E75",
-            color: "#ffffff",
-          }}
-        >
-          <Box> Copyright &copy; {year} </Box>
-          <Box>
+        <div className="grid grid-cols-1 items-center bg-[#525E75] text-white py-32 px-4 md:px-28 lg:px-48 justify-items-center">
+          <div> Copyright &copy; {year} </div>
+          <div>
             This website is designed by <b>Ruhul Sinbad </b>
-          </Box>
-        </Box>
-      </Box>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
