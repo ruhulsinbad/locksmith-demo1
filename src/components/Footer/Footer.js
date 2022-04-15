@@ -11,10 +11,9 @@ const Footer = () => {
     <>
       <Box>
         <Box
+          className="grid grid-cols-1 lg:grid-cols-3"
           sx={{
             p: 4,
-            display: { md: "flex", xl: "block" },
-            justifyContent: "space-evenly",
             bgcolor: "#525E75",
             color: "#ffffff",
           }}
@@ -39,18 +38,17 @@ const Footer = () => {
         </Box>
 
         <Box
+          className="grid grid-cols-1 lg:grid-cols-2 items-center"
           sx={{
             pt: 5,
             pb: 15,
-            display: "flex",
-            justifyContent: "space-evenly",
             bgcolor: "#525E75",
             color: "#ffffff",
           }}
         >
           <Box> Copyright &copy; {year} </Box>
           <Box>
-            This website is designed by <b>Ruhul Sinbad </b>{" "}
+            This website is designed by <b>Ruhul Sinbad </b>
           </Box>
         </Box>
       </Box>
