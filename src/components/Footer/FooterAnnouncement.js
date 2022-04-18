@@ -6,7 +6,7 @@ const FooterAnnouncement = () => {
     <Box
       sx={{
         p: 2,
-        bgcolor: "#FAFDD6",
+        bgcolor: "#066163",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -14,8 +14,12 @@ const FooterAnnouncement = () => {
       }}
     >
       {" "}
-      <Box>Get free quotes and suggestion in any emergency case</Box>
-      <Box sx={{ fontSize: 30 }}>Call : 729-888-667</Box>
+      <div className=" font-jose text-xl text-white text-center">
+        Get free quotes and suggestion in any emergency case
+      </div>
+      <div className=" font-sans font-bold text-white text-4xl">
+        Call : 729-888-667
+      </div>
     </Box>
   );
 };
