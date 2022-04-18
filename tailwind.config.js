@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+      jose: ["Josefin Sans", "sans-serif"],
     },
     extend: {},
   },

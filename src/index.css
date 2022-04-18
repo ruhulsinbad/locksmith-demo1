@@ -12,7 +12,7 @@
   }
 
   .icon-style {
-    @apply text-[#22577E] ring-2 rounded-full ring-offset-8 mb-6 ring-[#22577E];
+    @apply text-[#ffffff] ring-2 rounded-full ring-neutral-800 ring-offset-8;
   }
 
   .box-heading {

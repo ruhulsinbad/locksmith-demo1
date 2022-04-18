@@ -36,31 +36,32 @@ const AfterHead = () => {
       </Box>
       <Paper
         elevation={1}
-        sx={{ bgcolor: "#FAFDD6" }}
         className=" py-24 mb-24 grid grid-cols-1 lg:grid-cols-2 px-6  md:px-28 xl:px-48 justify-center items-center "
+        sx={{ bgcolor: "#FAFDD6" }}
       >
         <img
           className=" lg:pr-24 place-self-center drop-shadow-md"
           src={firstPhoto}
           alt="First"
         />
-        <Box className=" mt-10 lg:pl-8 flex flex-col justify-center items-center lg:border-l-2  ">
-          <p className="font-roboto tracking-widest text-2xl md:text-3xl lg:text-2xl ">
+
+        <Box className="mt-10 lg:pl-8 flex flex-col justify-center items-center lg:border-l-2  ">
+          <p className="font-jose tracking-widest text-2xl md:text-3xl lg:text-2xl ">
             We're providing ...
           </p>
-          <p className="font-sans -tracking-wide text-3xl md:text-5xl lg:text-3xl xl:text-4xl">
+          <p className="font-jose mt-3 -tracking-wide text-3xl md:text-5xl lg:text-3xl xl:text-4xl">
             Residential Locksmith
           </p>
           <p className="inline-block px-4 py-1 rounded-r-lg my-2 md:my-6 lg:my-3 text-2xl text-gray-50 bg-gray-900">
             SERVICE
           </p>
-          <p className="text-xl md:text-2xl lg:text-xl tracking-widest pt-4 my-3 lg:my-2">
-            Our Services Starts from
+          <p className="font-jose text-xl md:text-2xl lg:text-xl tracking-widest pt-4 my-3 lg:my-2">
+            Our Services Starts from{" "}
             <span className="ring-2 rounded-full p-1 text-white bg-slate-900 ring-slate-900 ring-offset-2 ">
               $9
             </span>
           </p>
-          <p className="text-lg md:text-xl lg:text-lg font-thin">
+          <p className="font-jose text-lg md:text-xl lg:text-lg font-thin">
             <span className="border-b-2 border-slate-900"> Note</span> : It may
             vary respect to service type.
           </p>

@@ -10,8 +10,8 @@ const Footer = () => {
     <>
       <div className="divide-y divide-dashed">
         <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#525E75] text-white px-4 py-16 md:px-28 lg:px-48 ">
-          <h1 className=" justify-self-start">Locksmith</h1>
-          <div className=" justify-self-center">
+          <h1 className=" lg:justify-self-start">Locksmith</h1>
+          <div className=" lg:justify-self-center">
             <ul>
               <li className="footer-menu"> Residential </li>
               <li className="footer-menu"> Corporate </li>
@@ -19,7 +19,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" justify-self-end">
+          <div className=" lg:justify-self-end">
             <h1 className=""> Follow us </h1>
             <div className="flex">
               <div className="group">

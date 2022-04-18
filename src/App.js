@@ -9,11 +9,13 @@ import AfterHead from "./components/Layouts/AfterHead";
 import SampleText from "./components/Layouts/SampleText";
 import Service from "./components/Layouts/Service";
 import "./common.css";
+
 // import First from "./prac/First";
 
 function App() {
   return (
     <>
+      <div className="h-12 w-screen bg-[#FAFDD6]"></div>
       <ResponsiveAppBar />
       <AfterHead />
       <SampleText />

@@ -27,9 +27,7 @@ const ResponsiveAppBar = () => {
     <AppBar
       elevation={0}
       position="sticky"
-      className=""
       sx={{
-        mt: 8,
         background: "#FAFDD6",
         boxShadow: "none",
         color: "#22577E",

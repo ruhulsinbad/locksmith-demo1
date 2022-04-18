@@ -4,7 +4,11 @@ import GoogleMap from "./GoogleMap";
 
 const Adress = () => {
   return (
-    <Paper className="flex flex-col justify-center items-center md:mx-28 xl:mx-48">
+    <Paper
+      elevation={0}
+      className="flex flex-col justify-center items-center md:mx-28 xl:mx-48"
+      sx={{ bgcolor: "transparent" }}
+    >
       <h1 className="font-sans pb-4 font-bold text-4xl border-b-2 border-gray-800 my-8">
         Our Address
       </h1>

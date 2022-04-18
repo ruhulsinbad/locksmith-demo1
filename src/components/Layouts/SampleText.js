@@ -11,10 +11,11 @@ const SampleText = () => {
   }, []);
 
   const cardStyle = {
-    my: { xs: 2, md: 2 },
-    mx: 0.5,
+    my: 2,
+    mx: { xs: 4, sm: 2, lg: 0.5 },
     px: 2,
-    py: 6,
+    py: { xs: 12, lg: 8 },
+    bgcolor: "#066163",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -27,19 +28,26 @@ const SampleText = () => {
     },
   };
   return (
-    <Paper className="relative z-90 md:mx-28 xl:mx-48" elevation={0}>
+    <Paper
+      className="relative z-90 md:mx-28 xl:mx-48 bg-transparent"
+      elevation={0}
+      sx={{ bgcolor: "transparent" }}
+    >
       <Card
         elevation={1}
         data-aos="fade-right"
         className=" py-16 flex flex-col justify-center items-center backdrop-blur-sm text-[#3A3845] rounded-3xl "
+        sx={{
+          backgroundImage: " linear-gradient(90deg, #BA81FF 0%, #FF6A95 99%)",
+        }}
       >
-        <h1 className="font-roboto font-semibold text-4xl text-center">
+        <h1 className="font-roboto font-semibold text-4xl text-center text-white">
           Beware of Scammer! - Use a licensed locksmith
         </h1>
         <p className="font-sans my-4 text-2xl border-l-4 border-[#05595B] duration-500 hover:translate-x-1 px-8 py-1 bg-slate-200 hover:border-l-8 hover:border-[#05595B] hover:bg-slate-100 hover:rounded-r-2xl mt-8 lg:mt-2">
           License No: <span className=""> #8209879 </span>
         </p>
-        <p className="font-sans font-light text-xl text-center text-[#1A132F] mt-8 lg:mt-2">
+        <p className="font-jose font-light text-2xl text-center text-[#1A132F] mt-8 lg:mt-2">
           "Providing reputable, affordable services since 2005, you can trust us
           to put your needs first while delivering you honest, quality
           solutions."
@@ -48,44 +56,64 @@ const SampleText = () => {
 
       {/* Practice Tailwind  */}
 
-      <Box className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-24   ">
+      <Box className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24   ">
         <Card sx={cardStyle}>
-          <ApartmentIcon className="icon-style" />
+          <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
+            <ApartmentIcon />
+          </div>
 
-          <h1 className="box-heading"> Residential </h1>
-          <p className="text-[#1B1A17]">
+          <h1 className="box-heading font-jose text-white"> Residential </h1>
+          <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
             who you can call when problems arise.
           </p>
-          <Button> Learn More </Button>
+          <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
+            Learn More
+          </Button>
         </Card>
         <Card sx={cardStyle}>
-          <ApartmentIcon className="icon-style" />
+          <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
+            <ApartmentIcon />
+          </div>
 
-          <h1 className="box-heading"> Residential </h1>
-          <p className="text-[#1B1A17]">
+          <h1 className="box-heading font-jose text-white mb-4 ">
+            Residential
+          </h1>
+          <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
             who you can call when problems arise.
           </p>
-          <Button> Learn More </Button>
+          <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
+            Learn More
+          </Button>
         </Card>
         <Card sx={cardStyle}>
-          <ApartmentIcon className="icon-style" />
-          <h1 className="box-heading"> Residential </h1>
-          <p className="text-[#1B1A17]">
+          <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
+            <ApartmentIcon />
+          </div>
+
+          <h1 className="box-heading font-jose text-white"> Residential </h1>
+          <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
             who you can call when problems arise.
           </p>
-          <Button> Learn More </Button>
+          <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
+            Learn More
+          </Button>
         </Card>
         <Card sx={cardStyle}>
-          <ApartmentIcon className="icon-style" />
-          <h1 className="box-heading"> Residential </h1>
-          <p className="text-[#1B1A17]">
+          <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
+            <ApartmentIcon />
+          </div>
+
+          <h1 className="box-heading font-jose text-white"> Residential </h1>
+          <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
             who you can call when problems arise.
           </p>
-          <Button> Learn More </Button>
+          <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
+            Learn More
+          </Button>
         </Card>
       </Box>
     </Paper>
