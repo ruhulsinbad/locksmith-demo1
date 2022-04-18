@@ -24,7 +24,7 @@ const AfterHead = () => {
           </a>
         </Box>
         <Box
-          className=" mt-6 w-12 h-12  md:mr-4 lg:mr-10 xl:mr-16  rounded-full hidden md:flex justify-center items-center  shadow-zinc-900 duration-300 hover:-translate-y-2 "
+          className=" mt-6 w-12 h-12  md:mr-4 lg:mr-10 xl:mr-16  rounded-full hidden md:flex justify-center items-center shadow-md shadow-zinc-900 duration-300 hover:-translate-y-2 "
           sx={{
             backgroundImage: " linear-gradient(90deg, #BA81FF 0%, #FF6A95 99%)",
           }}

@@ -1,8 +1,13 @@
 import { Box, Paper } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import GoogleMap from "./GoogleMap";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Adress = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <Paper
       elevation={0}
@@ -16,7 +21,10 @@ const Adress = () => {
         <GoogleMap />
       </Box>
 
-      <div className="my-24 grid grid-cols-1 md:grid-cols-2 bg-[#383838] rounded-lg py-12 items-center">
+      <div
+        data-aos="fade-in"
+        className="my-24 grid grid-cols-1 md:grid-cols-2 bg-[#383838] rounded-lg py-12 items-center"
+      >
         <div>
           <p
             className="font-jose text-white px-12 mb-12 md:mb-0 
