@@ -39,7 +39,7 @@ const SampleText = () => {
       <Card
         elevation={1}
         data-aos="fade-right"
-        className=" py-16 flex flex-col justify-center items-center backdrop-blur-sm text-[#3A3845] rounded-3xl "
+        className=" py-16 px-4 mx-4  flex flex-col justify-center items-center backdrop-blur-sm text-[#3A3845] rounded-3xl "
         sx={{
           backgroundImage: " linear-gradient(90deg, #BA81FF 0%, #FF6A95 99%)",
         }}
