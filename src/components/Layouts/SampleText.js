@@ -1,6 +1,9 @@
 import { Box, Button, Card, Paper } from "@mui/material";
 import React, { useEffect } from "react";
 import ApartmentIcon from "@mui/icons-material/Apartment";
+import KeyIcon from "@mui/icons-material/Key";
+import CorporateFareIcon from "@mui/icons-material/CorporateFare";
+import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import "./SampleText.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -41,11 +44,11 @@ const SampleText = () => {
           backgroundImage: " linear-gradient(90deg, #BA81FF 0%, #FF6A95 99%)",
         }}
       >
-        <h1 className="font-roboto font-semibold text-4xl text-center text-white">
+        <h1 className="font-rail font-semibold text-4xl text-center text-white">
           Beware of Scammer! - Use a licensed locksmith
         </h1>
-        <p className="font-sans my-4 text-2xl border-l-4 border-[#05595B] duration-500 hover:translate-x-1 px-8 py-1 bg-slate-200 hover:border-l-8 hover:border-[#05595B] hover:bg-slate-100 hover:rounded-r-2xl mt-8 lg:mt-2">
-          License No: <span className=""> #8209879 </span>
+        <p className="font-rail my-4 text-2xl border-l-4 border-[#22577E] duration-500 hover:translate-x-1 px-8 py-1 bg-slate-200 hover:border-l-8 hover:border-[#066163] hover:bg-slate-100 hover:rounded-r-2xl mt-8 lg:mt-2">
+          License No: <span className="font-jose"> #8209879 </span>
         </p>
         <p className="font-jose font-light text-2xl text-center text-[#1A132F] mt-8 lg:mt-2">
           "Providing reputable, affordable services since 2005, you can trust us
@@ -62,22 +65,9 @@ const SampleText = () => {
             <ApartmentIcon />
           </div>
 
-          <h1 className="box-heading font-jose text-white"> Residential </h1>
-          <p className=" font-jose text-white">
-            Your home should always feel safe. Know that your locks work, and
-            who you can call when problems arise.
-          </p>
-          <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
-            Learn More
-          </Button>
-        </Card>
-        <Card sx={cardStyle}>
-          <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
-            <ApartmentIcon />
-          </div>
-
-          <h1 className="box-heading font-jose text-white mb-4 ">
-            Residential
+          <h1 className="box-heading font-jose text-white  mb-4">
+            {" "}
+            Residential{" "}
           </h1>
           <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
@@ -89,10 +79,10 @@ const SampleText = () => {
         </Card>
         <Card sx={cardStyle}>
           <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
-            <ApartmentIcon />
+            <KeyIcon />
           </div>
 
-          <h1 className="box-heading font-jose text-white"> Residential </h1>
+          <h1 className="box-heading font-jose text-white mb-4 ">Car Key</h1>
           <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
             who you can call when problems arise.
@@ -103,10 +93,27 @@ const SampleText = () => {
         </Card>
         <Card sx={cardStyle}>
           <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
-            <ApartmentIcon />
+            <CorporateFareIcon />
           </div>
 
-          <h1 className="box-heading font-jose text-white"> Residential </h1>
+          <h1 className="box-heading font-jose text-white  mb-4">
+            {" "}
+            Corporate{" "}
+          </h1>
+          <p className=" font-jose text-white">
+            Your home should always feel safe. Know that your locks work, and
+            who you can call when problems arise.
+          </p>
+          <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
+            Learn More
+          </Button>
+        </Card>
+        <Card sx={cardStyle}>
+          <div className="w-12 h-12 mb-4 bg-white grid place-items-center rounded-full drop-shadow-xl">
+            <AirportShuttleIcon />
+          </div>
+
+          <h1 className="box-heading font-jose text-white  mb-4"> Mobile </h1>
           <p className=" font-jose text-white">
             Your home should always feel safe. Know that your locks work, and
             who you can call when problems arise.

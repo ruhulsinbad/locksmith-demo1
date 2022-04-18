@@ -14,7 +14,7 @@ const FooterAnnouncement = () => {
       }}
     >
       {" "}
-      <div className=" font-jose text-xl text-white text-center">
+      <div className=" font-lato text-xl text-white text-center">
         Get free quotes and suggestion in any emergency case
       </div>
       <div className=" font-sans font-bold text-white text-4xl">

@@ -8,7 +8,7 @@
   }
 
   .footer-menu {
-    @apply font-sans duration-300 hover:translate-x-1;
+    @apply font-sans duration-100 pl-3 hover:translate-x-1 hover:border-l-4 hover:border-[#066163];
   }
 
   .icon-style {
