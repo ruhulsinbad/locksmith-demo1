@@ -15,7 +15,7 @@ const Service = () => {
     <>
       <Paper
         elevation={1}
-        data-aos="fade-right"
+        // data-aos="fade-right"
         className="relative z-50 mx-4 sm:mx-8 md:mx-28 xl:mx-48 my-12 py-6 grid grid-cols-1 lg:grid-cols-2 px-2 "
         sx={{
           color: "#22577E",
