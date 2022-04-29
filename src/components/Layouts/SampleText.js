@@ -1,18 +1,12 @@
 import { Box, Button, Card, Paper } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import KeyIcon from "@mui/icons-material/Key";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import "./SampleText.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const SampleText = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   const cardStyle = {
     my: 2,
     mx: { xs: 4, sm: 2, lg: 0.5 },
@@ -38,7 +32,6 @@ const SampleText = () => {
     >
       <Card
         elevation={1}
-        data-aos="fade-right"
         className=" py-16 px-4 mx-4  flex flex-col justify-center items-center backdrop-blur-sm text-[#3A3845] rounded-3xl "
         sx={{
           backgroundImage: " linear-gradient(90deg, #BA81FF 0%, #FF6A95 99%)",
